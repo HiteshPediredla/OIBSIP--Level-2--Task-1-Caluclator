@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #000;
+
+}
+
+.calucaltor {
+  width: 100%;
+  min-height: 80vh;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 20px;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.calucaltor .output {
+  background-color: #CE5A67;
+  grid-column: 1 / 5;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 40px;
+  padding: 0 20px;
+  border-radius: 4px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.calucaltor button {
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  background: none;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #999999;
+  cursor:pointer;
+  transition: all 0.2s ease;
+}
+
+.calucaltor button:hover{
+  background: #B2C8BA;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.calucaltor button:last-child{
+  background:  #CE5A67;
+  color: white;
+}
+
+
+/* media queries */
+@media (max-width: 768px) {
+  .calucaltor {
+
+    max-width: 450px;
+    margin: 80px auto;
+
+  }
+
+  .calucaltor button {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 466px) {
+  .calucaltor {
+    max-width: 365px;
+    margin: 60px auto;
+    padding: 10px;
+    gap: 8px;
+    border-radius: 8px;
+
+
+  }
+
+  .calucaltor button {
+    font-size: 20px;
+  }
+}
